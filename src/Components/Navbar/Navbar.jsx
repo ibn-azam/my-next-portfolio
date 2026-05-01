@@ -37,12 +37,12 @@ export default function Navbar() {
       <nav className="relative flex items-center justify-between w-full max-w-190 bg-[#0a1223]/85 backdrop-blur-xl border border-white/[0.07] rounded-full px-6 pr-2.5 py-2.5 shadow-[0_8px_40px_rgba(0,0,0,0.5)]">
 
         {/* Brand */}
-        <span className={`text-white text-[16px] font-bold tracking-[0.18em] uppercase select-none whitespace-nowrap ${playwrite.className}`}>
+        {/* <span className={`text-white text-[16px] font-bold tracking-[0.18em] uppercase select-none whitespace-nowrap ${playwrite.className}`}>
           Farhan
-        </span>
-        {/* <Link href="/">
+        </span> */}
+        <Link href="/">
   <Image  src={Logo} alt="Logo" width={44} height={44} />
-</Link> */}
+</Link>
 
         {/* Desktop Nav Links */}
         <ul className={`hidden sm:flex items-center gap-4 list-none ${inter.className}`}>
@@ -51,9 +51,9 @@ export default function Navbar() {
         </ul>
 
         {/* CTA Button - Desktop */}
-        <button className={`hidden sm:block bg-blue-600 hover:bg-blue-700 text-white text-[13px] font-semibold rounded-full px-5.5 py-2.75 shadow-[0_0_20px_rgba(37,99,235,0.45)] hover:shadow-[0_0_28px_rgba(37,99,235,0.65)] hover:-translate-y-px active:translate-y-0 transition-all duration-200 whitespace-nowrap cursor-pointer ${inter.className}`}>
+        <Link href="/contact" className={`hidden sm:block bg-blue-600 hover:bg-blue-700 text-white text-[13px] font-semibold rounded-full px-5.5 py-2.75 shadow-[0_0_20px_rgba(37,99,235,0.45)] hover:shadow-[0_0_28px_rgba(37,99,235,0.65)] hover:-translate-y-px active:translate-y-0 transition-all duration-200 whitespace-nowrap cursor-pointer ${inter.className}`}>
           Book a call
-        </button>
+        </Link>
 
         {/* Hamburger - Mobile */}
         <button
@@ -86,9 +86,9 @@ export default function Navbar() {
          {links}
            
         </ul>
-          <button className={`mt-2 bg-blue-600 text-white text-[13px] font-semibold rounded-full px-5 py-3 shadow-[0_0_20px_rgba(37,99,235,0.4)] cursor-pointer ${inter.className}`}>
+          <Link href="/contact" className={`mt-2 bg-blue-600 text-white text-[13px] font-semibold rounded-full px-5 py-3 shadow-[0_0_20px_rgba(37,99,235,0.4)] cursor-pointer ${inter.className}`}>
             Book a call
-          </button>
+          </Link>
         </div>
       )}
     </div>

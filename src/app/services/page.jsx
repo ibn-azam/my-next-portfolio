@@ -132,7 +132,7 @@ export default function Services() {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className={`min-h-screen bg-[#060d1a] text-white ${inter.className}`}>
+    <div className={` min-h-screen bg-[#060d1a] text-white ${inter.className}`}>
 
       {/* Ambient blobs */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">

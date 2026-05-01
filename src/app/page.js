@@ -107,7 +107,7 @@ export default function Home() {
             </span>
           </motion.div>
 
-          {/* Name — Fix 2: bg-gradient-to-r not bg-linear-to-r */}
+          
           <motion.h1
             variants={fadeUp}
             className={`text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight ${oxanium.className}`}
