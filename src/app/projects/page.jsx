@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Oxanium, Inter } from "next/font/google";
 
+
 const oxanium = Oxanium({
   subsets: ["latin"],
   weight: ["800"],

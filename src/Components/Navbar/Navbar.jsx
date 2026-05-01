@@ -32,9 +32,9 @@ export default function Navbar() {
 </>
 
   return (
-    <div className="flex flex-col items-center px-6 py-5 bg-[#060d1a]">
+    <div className="flex flex-col items-center px-6 py-5 bg-[#060d1a] ">
       {/* Navbar Pill */}
-      <nav className="relative flex items-center justify-between w-full max-w-190 bg-[#0a1223]/85 backdrop-blur-xl border border-white/[0.07] rounded-full px-6 pr-2.5 py-2.5 shadow-[0_8px_40px_rgba(0,0,0,0.5)]">
+      <nav className="relative flex items-center justify-between w-full max-w-190 bg-[#0a1223]/85 backdrop-blur-xl border border-white/[0.07] rounded-full px-6 pr-2.5 py-2.5 shadow-[0_8px_40px_rgba(0,0,0,0.5)] ">
 
         {/* Brand */}
         {/* <span className={`text-white text-[16px] font-bold tracking-[0.18em] uppercase select-none whitespace-nowrap ${playwrite.className}`}>

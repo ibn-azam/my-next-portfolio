@@ -156,7 +156,7 @@ export default function Home() {
             </button>
           </motion.div>
 
-          {/* Fix 3: Social icon stats — each card is a clickable <a> with string key */}
+          
           <motion.div
             variants={fadeUp}
             className="grid grid-cols-4 gap-3 mt-12"
@@ -216,7 +216,7 @@ export default function Home() {
 
           {/* Floating badge — top right */}
           <motion.div
-            className="absolute top-4 -right-2 md:right-[-20px] bg-[#0d1e3a] border border-white/[0.08] rounded-2xl px-4 py-2.5 shadow-xl backdrop-blur-md"
+            className="absolute top-4 -right-2 md:right-[-20px]  border border-white/[0.08] rounded-2xl px-4 py-2.5 shadow-xl backdrop-blur-md"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
@@ -227,12 +227,12 @@ export default function Home() {
 
           {/* Floating badge — bottom left */}
           <motion.div
-            className="absolute bottom-12 -left-2 md:left-[-20px] bg-[#0d1e3a] border border-white/[0.08] rounded-2xl px-4 py-2.5 shadow-xl backdrop-blur-md"
+            className="absolute bottom-12 -left-2 md:left-[-20px]  border border-white/[0.08] rounded-2xl px-4 py-2.5 shadow-xl backdrop-blur-md"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 1.0, duration: 0.6 }}
           >
-            <p className="text-white text-lg font-bold leading-none">10+</p>
+            <p className="text-white text-lg font-bold leading-none">5+</p>
             <p className="text-white/45 text-[11px] mt-0.5">Years of Experience</p>
           </motion.div>
         </motion.div>
