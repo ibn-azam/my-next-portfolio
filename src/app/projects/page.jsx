@@ -2,6 +2,19 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Oxanium , Inter } from "next/font/google";
+
+const oxanium = Oxanium({
+  subsets: ["latin"],
+  weight: ["800"],
+  variable: "--font-oxanium",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-inter",
+});
 
 const GITHUB_USERNAME = "ibn-azam";
 
@@ -117,12 +130,12 @@ export default function Projects() {
   const filtered = filter === "All" ? repos : repos.filter((r) => r.language === filter);
 
   return (
-    <div className="min-h-screen bg-[#060d1a] text-white px-6 md:px-16 lg:px-28 py-24">
+    <div className={`min-h-screen bg-[#060d1a] text-white px-6 md:px-16 lg:px-28 py-24 ${inter.className}`}>
 
       {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 z-0">
-        <div className="absolute top-[-10%] right-[-5%] w-[400px] h-[400px] rounded-full bg-blue-700/15 blur-[120px]" />
-        <div className="absolute bottom-[10%] left-[-5%] w-[300px] h-[300px] rounded-full bg-blue-900/20 blur-[100px]" />
+        <div className="absolute top-[-10%] right-[-5%] w-100 h-100 rounded-full bg-blue-700/15 blur-[120px]" />
+        <div className="absolute bottom-[10%] left-[-5%] w-75 h-75 rounded-full bg-blue-900/20 blur-[100px]" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto">
@@ -138,7 +151,7 @@ export default function Projects() {
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
             GitHub Projects
           </span>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+          <h1 className={`text-4xl md:text-5xl font-extrabold text-white tracking-tight ${oxanium.className}`}>
             My{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
               Projects
@@ -164,7 +177,7 @@ export default function Projects() {
                 className={`text-xs font-semibold px-4 py-2 rounded-full border transition-all duration-200 cursor-pointer ${
                   filter === lang
                     ? "bg-blue-600 border-blue-600 text-white shadow-[0_0_16px_rgba(37,99,235,0.4)]"
-                    : "bg-white/[0.04] border-white/10 text-white/60 hover:text-white hover:border-white/20"
+                    : "bg-white/4 border-white/10 text-white/60 hover:text-white hover:border-white/20"
                 }`}
               >
                 {lang}
@@ -179,7 +192,7 @@ export default function Projects() {
             {[...Array(6)].map((_, i) => (
               <div
                 key={i}
-                className="bg-white/[0.03] border border-white/[0.07] rounded-2xl p-6 h-48 animate-pulse"
+                className="bg-white/3 border border-white/[0.07] rounded-2xl p-6 h-48 animate-pulse"
               >
                 <div className="h-4 bg-white/10 rounded-full w-2/3 mb-3" />
                 <div className="h-3 bg-white/[0.07] rounded-full w-full mb-2" />

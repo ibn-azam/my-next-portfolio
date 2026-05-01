@@ -3,6 +3,19 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Oxanium , Inter } from "next/font/google";
+
+const oxanium = Oxanium({
+  subsets: ["latin"],
+  weight: ["800"],
+  variable: "--font-oxanium",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-inter",
+});
 
 const services = [
   {
@@ -119,7 +132,7 @@ export default function Services() {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <div className="min-h-screen bg-[#060d1a] text-white">
+    <div className={`min-h-screen bg-[#060d1a] text-white ${inter.className}`}>
 
       {/* Ambient blobs */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
@@ -142,7 +155,7 @@ export default function Services() {
             What I Offer
           </span>
           <div className="flex flex-col gap-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
+            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none ${oxanium.className}`}>
               My{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-600">
                 Services
