@@ -17,9 +17,9 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-// 🔁 Update these with your real info
+
 const CONTACT_INFO = {
-  email: "farhan@example.com",
+  email: "farhan.tsx@gmail.com",
   linkedin: "linkedin.com/in/farhan-bin-azam",
   github: "github.com/ibn-azam",
   instagram: "instagram.com/farhan",

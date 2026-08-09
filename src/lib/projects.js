@@ -1,3 +1,5 @@
+const screenshot = (url) =>
+  `https://api.screenshotone.com/take?url=${url}&access_key=YOUR_KEY`;
 export const projects = [
   {
     slug: "digitools-platform-react",
@@ -5,7 +7,7 @@ export const projects = [
     tagline: "Supercharge Your Digital Workflow",
     description:
       "A modern digital marketplace platform where users can discover, explore, and purchase premium digital products — including AI-powered tools, design assets, and productivity software. Built with a clean, responsive UI and a seamless cart experience.",
-    image: "https://opengraph.githubassets.com/1/ibn-azam/digitools-platform-react",
+    image:  "https://api.microlink.io/?url=https://digitools-platform-products.netlify.app/&screenshot=true&meta=false&embed=screenshot.url",
     tech: ["React 18", "Vite", "Tailwind CSS", "DaisyUI", "Lucide React"],
     techIcons: ["⚛️", "⚡", "🎨", "🌼", "🧩"],
     github: "https://github.com/ibn-azam/digitools-platform-react",
@@ -52,11 +54,11 @@ export const projects = [
     tagline: "Personal portfolio built with Next.js",
     description:
       "A fully responsive, modern personal portfolio website built with Next.js 14, Tailwind CSS, and Framer Motion. Features animated hero section, project showcase pulled live from GitHub API, skills section, and contact form.",
-    image: "https://opengraph.githubassets.com/1/ibn-azam/my-next-portfolio",
+    image: "https://api.microlink.io/?url=https://my-next-portfolio-eight-nu.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
     tech: ["Next.js 14", "Tailwind CSS", "Framer Motion", "GitHub API"],
     techIcons: ["▲", "🎨", "🎬", "🐙"],
     github: "https://github.com/ibn-azam/my-next-portfolio",
-    live: null,
+    live: "https://my-next-portfolio-eight-nu.vercel.app/",
     category: "Frontend",
     challenges: [
       "Integrating Google Fonts via next/font without layout shift on initial load.",
@@ -97,11 +99,11 @@ export const projects = [
     tagline: "Store and organize your ideas",
     description:
       "IdeaVault is a note-taking and idea management web app built with JavaScript. Users can create, edit, and delete ideas with a clean card-based UI. Data persists in localStorage so ideas are saved between sessions.",
-    image: "https://opengraph.githubassets.com/1/ibn-azam/ideavault",
+    image: "https://api.microlink.io/?url=https://ideavault-theta.vercel.app/&screenshot=true&meta=false&embed=screenshot.url",
     tech: ["JavaScript", "HTML5", "CSS3", "LocalStorage"],
     techIcons: ["⚡", "🌐", "🎨", "💾"],
     github: "https://github.com/ibn-azam/ideavault",
-    live: null,
+    live: "https://ideavault-theta.vercel.app/",
     category: "Frontend",
     challenges: [
       "Implementing CRUD operations cleanly with vanilla JavaScript and no framework.",

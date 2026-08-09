@@ -42,8 +42,6 @@ const fadeUp = {
 
 export default function ProjectDetail() {
      const { slug } = useParams();
-     console.log("slug:", slug);
-console.log("all slugs:", projects.map(p => p.slug));
   const project = projects.find((p) => p.slug.toLowerCase() === slug.toLowerCase());
 
   if (!project) return <div className="text-white text-center py-40">Project not found.</div>;
@@ -62,7 +60,7 @@ console.log("all slugs:", projects.map(p => p.slug));
         {/* Back button */}
         <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
           <Link
-            href="/projects"
+            href="/"
             className="inline-flex items-center gap-2 text-white/40 hover:text-white text-sm font-medium mb-10 transition-colors duration-200 group"
           >
             <span className="group-hover:-translate-x-0.5 transition-transform duration-200"><BackIcon /></span>
