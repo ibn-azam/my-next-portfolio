@@ -10,8 +10,5 @@ export function generateStaticParams() {
 export default async function Page({ params }) {
   const resolvedParams = await params;
 
-  console.log("🔥 PAGE PARAMS:", resolvedParams);
-  console.log("🔥 PAGE SLUG:", resolvedParams?.slug);
-
   return <ProjectDetail slug={resolvedParams?.slug} />;
 }

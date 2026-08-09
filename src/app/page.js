@@ -3,10 +3,10 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
-import AboutMe from "@/Components/AboutMe";
-import MySkills from "@/Components/MySkills";
-import MyEducation from "@/Components/MyEducation";
-import Navbar from "@/Components/Navbar/Navbar";
+import AboutMe from "@/components/AboutMe";
+import MySkills from "@/components/MySkills";
+import MyEducation from "@/components/MyEducation";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
