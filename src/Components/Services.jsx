@@ -141,7 +141,7 @@ export default function Services() {
         <div className="absolute bottom-[-10%] left-[30%] w-87.5 h-87.5 rounded-full bg-indigo-900/15 blur-[100px]" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-16 lg:px-28 py-24">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-16 lg:px-28">
 
         {/* ── HEADER ── */}
         <motion.div
